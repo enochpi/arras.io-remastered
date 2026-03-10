@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #1a1a2e;
+    font-family: 'Exo 2', sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+#gameCanvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: crosshair;
+}
+
+#crosshair {
+    position: fixed;
+    pointer-events: none;
+    z-index: 100;
+    width: 28px;
+    height: 28px;
+    transform: translate(-50%, -50%);
+    display: none;
+}
